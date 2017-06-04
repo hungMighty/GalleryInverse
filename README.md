@@ -1,2 +1,2 @@
-# LOLWiki
-An App used for reading champions' histories
+# Gallery Inverse
+An App used for moving wallpapers around.
