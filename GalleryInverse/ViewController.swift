@@ -15,9 +15,16 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        (1 ... 5).forEach {
+            DispatchQueue.global(qos: .background).asyncAfter(deadline: .now() + .seconds($0)) {
+                DispatchQueue.main.async {
+                    print("Hi there")
+                }
+            }
+        }
     }
 
 
