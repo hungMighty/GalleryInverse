@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A074649A1EF51EDA00224702 /* GlobalTableCells.swift in Sources */ = {isa = PBXBuildFile; fileRef = A07464991EF51EDA00224702 /* GlobalTableCells.swift */; };
 		CF6AF7B31EE45BF400209C69 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF6AF7B21EE45BF400209C69 /* AppDelegate.swift */; };
 		CF6AF7B51EE45BF400209C69 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF6AF7B41EE45BF400209C69 /* ViewController.swift */; };
 		CF6AF7B81EE45BF400209C69 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF6AF7B61EE45BF400209C69 /* Main.storyboard */; };
@@ -35,6 +36,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A07464991EF51EDA00224702 /* GlobalTableCells.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GlobalTableCells.swift; sourceTree = "<group>"; };
 		CF6AF7AF1EE45BF400209C69 /* GalleryInverse.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GalleryInverse.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF6AF7B21EE45BF400209C69 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CF6AF7B41EE45BF400209C69 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -100,6 +102,7 @@
 			isa = PBXGroup;
 			children = (
 				CF6AF7B21EE45BF400209C69 /* AppDelegate.swift */,
+				A07464991EF51EDA00224702 /* GlobalTableCells.swift */,
 				CF6AF7B41EE45BF400209C69 /* ViewController.swift */,
 				CF6AF7B61EE45BF400209C69 /* Main.storyboard */,
 				CF6AF7BC1EE45BF400209C69 /* Assets.xcassets */,
@@ -138,6 +141,7 @@
 				CF6AF7AB1EE45BF400209C69 /* Sources */,
 				CF6AF7AC1EE45BF400209C69 /* Frameworks */,
 				CF6AF7AD1EE45BF400209C69 /* Resources */,
+				A074649B1EF5207A00224702 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -258,12 +262,29 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		A074649B1EF5207A00224702 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\n    swiftlint\nelse\n    echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		CF6AF7AB1EE45BF400209C69 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				CF6AF7B51EE45BF400209C69 /* ViewController.swift in Sources */,
+				A074649A1EF51EDA00224702 /* GlobalTableCells.swift in Sources */,
 				CF6AF7B31EE45BF400209C69 /* AppDelegate.swift in Sources */,
 				CF6AF7BB1EE45BF400209C69 /* GalleryInverse.xcdatamodeld in Sources */,
 			);
