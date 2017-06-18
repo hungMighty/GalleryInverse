@@ -21,7 +21,7 @@ class ViewController: UIViewController {
     fileprivate let sectionsTitles = [Sections.profile: "Profile",
                                        Sections.desires: "Desires"
     ]
-    fileprivate let cellPerSections: [Sections: Int] = [
+    fileprivate let numberOfCellsPerSection: [Sections: Int] = [
         Sections.profile: ProfileCells.count,
         Sections.desires: DesireCells.count
     ]
@@ -97,7 +97,7 @@ extension ViewController: UITableViewDataSource {
     }
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        guard let sectionEnum = Sections(rawValue: section), let rowCount = cellPerSections[sectionEnum] else {
+        guard let sectionEnum = Sections(rawValue: section), let rowCount = numberOfCellsPerSection[sectionEnum] else {
             return 0
         }
         return rowCount
