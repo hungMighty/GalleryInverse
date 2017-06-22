@@ -46,8 +46,8 @@ class ViewController: UIViewController {
     ]
     fileprivate let profileCellsValues: [ProfileCells: String] = [
         ProfileCells.userName: "Hung Mighty",
-        ProfileCells.cellPhone: "099 378 5485",
-        ProfileCells.nickName: "Ahri",
+        ProfileCells.cellPhone: "0902 503 788",
+        ProfileCells.nickName: "Hung Mighty",
         ProfileCells.gender: "Male"
     ]
 
@@ -68,9 +68,9 @@ class ViewController: UIViewController {
         DesireCells.targetSalary: "Target Salary"
     ]
     fileprivate let desireCellsValues: [DesireCells: String] = [
-        DesireCells.lover: "Ahri",
+        DesireCells.lover: "None",
         DesireCells.school: "RMIT",
-        DesireCells.targetSalary: "Over 100K"
+        DesireCells.targetSalary: "$500"
     ]
 
     // MARK: - View Lifecycle
